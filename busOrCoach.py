@@ -24,7 +24,7 @@ def getInput(text=None):
     if text is not None:
       print(text)
     r = msvcrt.getch().decode('ascii').upper()
-    return r = msvcrt.getch().decode('ascii').upper()
+    return r
   else:
     if text is None:
       text=''
