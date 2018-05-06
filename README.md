@@ -9,6 +9,10 @@ a browser window and searches for images on Flickr related to that number. It tu
 that there is a large community of bus-spotters uploading photos tagged with registration
 numbers onto Flickr. It is up to the user to decide whether the image is a bus or a coach.
 
+If, for a particular registration number, the user selects "Unknown" (U) then some META data
+about the vehicle will be presented, if available. If the user selects U again then the vehicle
+will be recorded as "Unknown".
+
 Clearly this is a somewhat labourious process, especially if the number of distinct 
 registration plates is large. There is scope to try machine learning tools to automatically
 judge whether each image is of a bus or a coach, but I imagine that that is a difficult
