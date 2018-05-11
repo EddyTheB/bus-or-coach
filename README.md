@@ -13,7 +13,7 @@ If, for a particular registration number, the user selects "Unknown" (U) then so
 about the vehicle will be presented, if available. If the user selects U again then the vehicle
 will be recorded as "Unknown".
 
-Clearly this is a somewhat labourious process, especially if the number of distinct 
+Clearly this is a somewhat labourious process, especially if the number of distinct
 registration plates is large. There is scope to try machine learning tools to automatically
 judge whether each image is of a bus or a coach, but I imagine that that is a difficult
 judgement for a computer to make.
@@ -29,7 +29,7 @@ I have loosely been following the following guidelines, in this order:
    straightforward, then it's a bus.
  - If the vehicle has luggage compartments beneath the passenger compartment, and passengers need
    to ascend steps to enter the cabin, then it's a coach.
-   
+
 ## USAGE ##
 ```
 $python .\busOrCoach.py -h
@@ -48,9 +48,3 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
-
-## IMPROVEMENTS CONSIDERED ##
-This code will work on the particular Automatic Number Plate Recognition data files that it was
-designed for, but it will need some adjusting to generalise it to other datasets, such as allowing
-the user to specify different column names for different parameters. That sort of adjustment
-should be trivial, whenever it is required.
