@@ -10,6 +10,7 @@ import os
 import argparse
 from selenium import webdriver
 import pandas as pd
+from fuzzywuzzy import process
 
 try:
   import msvcrt # Good because users do not have to press enter
@@ -33,7 +34,7 @@ def getInput(text=None):
 
 
 def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search/?text=',
-                         data=None, RegPlateCol=None):
+                         data=None, vehRegPlateCol=None, metaCols={}):
   """
   Iterate through a list of registration numbers. For each number open a browser
   showing the Flikr search results for that registration number and ask the
@@ -42,6 +43,13 @@ def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search
   Returns a dictionary where each registration number has a value in either
   B (for bus), C (for coach), M (for minibus), O (for other), or U for (unknown).
   """
+
+  helpMessage = "Use 'X' to exit programme."
+  if (data is not None) and (len(metaCols) > 0):
+    gotMeta = True
+    helpMessage += " Press 'U' (once) for meta data."
+  else:
+    gotMeta = False
 
   BCD = {'B': 'Bus', 'C': 'Coach', 'M': 'Minibus', 'O': 'Other', 'U': 'Unknown'}
   opts = list(BCD.keys())
@@ -52,7 +60,7 @@ def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search
   rnl = len(numberPlateC)
   for rni, (rn, N) in enumerate(numberPlateC.items()):
     if rni%10 == 0:
-      print("Use 'X' to exit programme.")
+      print(helpMessage)
     url = baseurl+rn
     BC = 'qqqq'
     while BC not in opts:
@@ -63,19 +71,11 @@ def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search
       BC = BC.upper()
       if BC not in opts:
         print('Input {} not understood.'.format(BC))
-      if (BC == 'U') and (data is not None):
+      if (BC == 'U') and (gotMeta):
         print('Unknown')
         print('Further Information:')
-        make = list(data.loc[data[RegPlateCol] == rn, 'MVRIS_MAKE_DESC'])[0]
-        model = list(data.loc[data[RegPlateCol] == rn, 'MVRIS_MODEL_DESC'])[0]
-        seats = list(data.loc[data[RegPlateCol] == rn, 'DVLA_VEHICLE_SEATING_CAPACITY'])[0]
-        gw = list(data.loc[data[RegPlateCol] == rn, 'MVRIS_GROSS_WEIGHT'])[0]
-        uw = list(data.loc[data[RegPlateCol] == rn, 'MVRIS_UNLADEN_WEIGHT'])[0]
-        print('  Make:           {}'.format(make))
-        print('  Model:          {}'.format(model))
-        print('  Seats:          {}'.format(seats))
-        print('  Gross Weight:   {}'.format(gw))
-        print('  Unladen Weight: {}'.format(uw))
+        for key, value in metaCols.items():
+          print('  {}: {}'.format(key[3:-4], list(data.loc[data[vehRegPlateCol] == rn, value])[0]))
         print('Bus(B), Coach (C), Minibus(M), Other(O) or Unknown(U)? ', end='', flush=True)
         BC = getInput()
         BC = BC.upper()
@@ -87,51 +87,105 @@ def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search
       break
   return busCoach
 
-def testFromFile(filename, autoMiniBus=True,
-                 startNew=False, BCCol='BusCoach', RegPlateCol='Plate',
-                 busClasses = ['S/D BUS/COACH', 'D/D BUS/COACH', 'H/D BUS/COACH', 'MINIBUS']):
+def testFromFile(inputfile=None, autoMiniBus=True,
+                 startNew=False, busCoachColOut='BusCoach', vehRegPlateCol='Plate',
+                 vehBodyCol='DVLA_VEHICLE_BODY', vehGrossWeightOCol='---',
+                 vehMakeOCol='---', vehModelOCol='---',
+                 vehUnladenWeightOCol='---', vehSeatingCapacityOCol='---',
+                 busBodyTypes = ['S/D BUS/COACH', 'D/D BUS/COACH', 'H/D BUS/COACH', 'MINIBUS'],
+                 trustPreviousDecisions=False, previousDecisionsFile=None,
+                 **kwargs):
   """
   This is likely to only work on specific files.
   """
 
-  if filename[-4:] == '.csv':
-    data = pd.read_csv(filename)
+  if len(kwargs):
+    print('The following keyword arguments were provided and are not recognised:')
+    for kwarg in kwargs.keys():
+      print(kwarg)
+  LocalArgs = locals()
+
+  if inputfile[-4:] == '.csv':
+    data = pd.read_csv(inputfile)
   else:
-    data = pd.read_excel(filename)
+    data = pd.read_excel(inputfile)
+
+  allColumns = list(data)
+  metaCols = {}
+  for Arg, Value in LocalArgs.items():
+    if Arg[-4:] == 'OCol':
+      # Check that the optional column exists.
+      if Value not in allColumns:
+        bestOptions = process.extract(Value, allColumns, limit=5)
+        posNames = "', '".join([x[0] for x in bestOptions])
+        print(("\nOptional column {} does not exist in file, so will not be "
+               "available for meta data options. You can specify another "
+               "column using the --{} flag. Perhaps one of the "
+               "following is appropriate: '{}'.").format(Value, Arg, posNames))
+      else:
+        metaCols[Arg] = Value
+    elif Arg[-3:] == 'Col':
+      # Check that the required column exists.
+      if Value not in allColumns:
+        bestOptions = process.extract(Value, allColumns, limit=5)
+        posNames = '", "'.join([x[0] for x in bestOptions])
+        raise ValueError(('Column {} does not exist in file, specify another '
+                        'column using the --{} flag. Perhaps one of the '
+                        'following is appropriate: "{}".').format(Value, Arg, posNames))
 
   print('{} records'.format(len(data.index)))
-  data.loc[data['DVLA_VEHICLE_BODY'].isin(busClasses)]
+  data_NB = data.loc[~data[vehBodyCol].isin(busBodyTypes)]
+  if len(data_NB.index) > 0:
+    print(("{} records removed due to unrecognised body types. Set "
+           "'--busBodyTypes' if any need to be accepted.").format(len(data_NB.index)))
+    print(data_NB[vehBodyCol].unique())
+    print('Removed vehicle body types: {}.'.format(', '.join([str(x) for x in data_NB[vehBodyCol].unique()])))
+    data = data.loc[data[vehBodyCol].isin(busBodyTypes)]
+    print('{} records remaining.'.format(len(data.index)))
+
   data_orig = data.copy()
 
   BC_already = {}
-  if not startNew:
-    if BCCol in list(data):
-      redo = ['-', 'U', 'M']
-      data_already = data.loc[~data[BCCol].isin(redo)]
-      BC_already = pd.Series(data_already[BCCol].values, index=data_already[RegPlateCol]).to_dict()
-      data = data.loc[data[BCCol].isin(redo)]
-      print('{} already catagorised.'.format(len(data_already.index)))
+  if trustPreviousDecisions:
+    BC_already = getPreviousDecisions(previousDecisionsFile)
+    regplates = BC_already.keys()
+    regplatesnew = data[vehRegPlateCol].unique()
+    BC_already = {r: BC_already[r] for r in regplates if r in regplatesnew}
+    data_already = data.loc[data[vehRegPlateCol].isin(regplates)]
+    data = data.loc[~data[vehRegPlateCol].isin(regplates)]
+    print('{} already catagorised.'.format(len(data_already.index)))
 
   if autoMiniBus:
-    data_minibus = data.loc[(data['DVLA_VEHICLE_BODY'] == 'MINIBUS') &
-                            (data['MVRIS_GROSS_WEIGHT'] <= 3501)]
-    data = data.loc[(data['DVLA_VEHICLE_BODY'] != 'MINIBUS') |
-                    (data['MVRIS_GROSS_WEIGHT'] > 3501)]
-    BC_minibus = dict.fromkeys(list(data_minibus[RegPlateCol]), 'M')
+    if vehGrossWeightOCol not in allColumns:
+      print(("The normally optional column {} is required when --autoMiniBus "
+             "is set to True.").format(vehGrossWeightOCol))
+
+    data_minibus = data.loc[(data[vehBodyCol] == 'MINIBUS') &
+                            (data[vehGrossWeightOCol] <= 3501)]
+    data = data.loc[(data[vehBodyCol] != 'MINIBUS') |
+                    (data[vehGrossWeightOCol] > 3501)]
+    BC_minibus = dict.fromkeys(list(data_minibus[vehRegPlateCol]), 'M')
     print('{} automatically catagorised as minibuses.'.format(len(data_minibus.index)))
   else:
     BC_minibus = {}
 
-  print('{} records remaining. {} unique registration numbers.'.format(len(data.index), len(set(data[RegPlateCol]))))
-  BC_rest = sortBusesFromCoaches(list(data[RegPlateCol]), data=data, RegPlateCol=RegPlateCol)
+  print('{} records remaining. {} unique registration numbers.'.format(len(data.index), len(set(data[vehRegPlateCol]))))
+  if len(data.index) > 0:
+    BC_rest = sortBusesFromCoaches(list(data[vehRegPlateCol]), data=data, vehRegPlateCol=vehRegPlateCol, metaCols=metaCols)
+  else:
+    BC_rest = {}
 
+  print('Processing Complete.')
+  yn = input('Update previously assigned values? [y/n]')
+  if yn[0].upper() == 'Y':
+    updatePreviousDecisions(previousDecisionsFile, {**BC_rest, **BC_already})
 
   BC = {**BC_already, **BC_minibus, **BC_rest}
   #for key, value in BC.items():
   #  print(key, value)
-  data_orig[BCCol] = data_orig.apply(lambda row: BC[row[RegPlateCol]], axis=1)
+  data_orig[busCoachColOut] = data_orig.apply(lambda row: BC[row[vehRegPlateCol]], axis=1)
 
-  savepath, savefile = os.path.split(filename)
+  savepath, savefile = os.path.split(inputfile)
   savefile, _ = os.path.splitext(savefile)
   if savefile[-3:] != '_BC':
     savefile = os.path.join(savepath, savefile+'_BC')
@@ -145,6 +199,36 @@ def testFromFile(filename, autoMiniBus=True,
   print('Results saved in {}.'.format(savefile))
   data_orig.to_csv(savefile)
 
+def getPreviousDecisions(file, includeCity=False):
+  prevDataDF = pd.read_csv(file)
+  prevData = {}
+  if includeCity:
+    for ri, row in prevDataDF.iterrows():
+      prevData[row['Plate']] = {'BC': row['BusCoach'], 'City': row['City'].split(', ')}
+  else:
+    for ri, row in prevDataDF.iterrows():
+      prevData[row['Plate']] = row['BusCoach']
+  return prevData
+
+def updatePreviousDecisions(file, BC_new):
+
+  cityName = input('What city name would you like to assign to the new records?')
+  prevData = getPreviousDecisions(file, includeCity=True)
+  gotReg = prevData.keys()
+  for reg, value in BC_new.items():
+    if value not in ['B', 'C']:
+      continue
+    if reg in gotReg:
+      prevData[reg]['BC'] = value
+      prevData[reg]['City'].append(cityName)
+      prevData[reg]['City'] = list(set(prevData[reg]['City']))
+    else:
+      prevData[reg] = {'BC': value, 'City': [cityName]}
+  prevDataDF = pd.DataFrame(columns=['Plate', 'BusCoach', 'City'])
+  for reg, value in prevData.items():
+    prevDataDF = prevDataDF.append(pd.DataFrame([[reg, value['BC'], ', '.join(value['City'])]], columns=['Plate', 'BusCoach', 'City']))
+  prevDataDF.to_csv(file, index=False)
+  print('Previous decision file updated.')
 
 if __name__ == '__main__':
 
@@ -162,10 +246,66 @@ if __name__ == '__main__':
                             "registration numbers will be used to illustrate how "
                             "the tool works."))
 
+  parser.add_argument('--vehRegPlateCol', metavar='vehicle registration plate column name',
+                      type=str, nargs='?', default='PLATE',
+                      help=("The column name for the vehicle registration "
+                            "plate. Default 'PLATE'."))
+  parser.add_argument('--busCoachColOut', metavar='bus or coach column name',
+                      type=str, nargs='?', default='BusCoach',
+                      help=("The name of the column that will be appended to "
+                            "the input file, holding the values determining "
+                            "bus form coach. Default 'BusCoach'."))
+  parser.add_argument('--vehBodyCol', metavar='vehicle body type column name',
+                      type=str, nargs='?', default='Body',
+                      help=("The column name for the vehicle body type. "
+                            "Default 'Body'."))
+  parser.add_argument('--vehGrossWeightOCol', metavar='vehicle gross weight column name',
+                      type=str, nargs='?', default='Gross Weight',
+                      help=("The column name for the vehicle gross weight. Optional. "
+                            "Default 'Gross Weight'."))
+  parser.add_argument('--vehUnladenWeightOCol', metavar='vehicle unladen weight column name',
+                      type=str, nargs='?', default='Unladen Weight',
+                      help=("The column name for the vehicle unladen weight. Optional. "
+                            "Default 'Unladen Weight'."))
+  parser.add_argument('--vehMakeOCol', metavar='vehicle make column name',
+                      type=str, nargs='?', default='Make',
+                      help=("The column name for the vehicle make. Optional. "
+                            "Default 'Make'."))
+  parser.add_argument('--vehModelOCol', metavar='vehicle model column name',
+                      type=str, nargs='?', default='Model',
+                      help=("The column name for the vehicle make. Optional. "
+                            "Default 'Model'."))
+  parser.add_argument('--vehSeatingCapacityOCol', metavar='vehicle seating capacity name',
+                      type=str, nargs='?', default='Seating Capacity',
+                      help=("The column name for the vehicle seating capacity. Optional. "
+                            "Default 'Seating Capacity'."))
+  parser.add_argument('--autoMiniBus', metavar='detect minibuses automatically',
+                      type=bool, nargs='?', default=True,
+                      help=("If True, vehicles with a gross weight of 3500 kg "
+                            "or less will be automatically assigned as "
+                            "minibuses. If True, then an appropriate column "
+                            "be specified for --vehGrossWeightOCol. Default True."))
+  defaultbusBodyTypes = ['S/D BUS/COACH', 'D/D BUS/COACH', 'H/D BUS/COACH', 'MINIBUS']
+  parser.add_argument('--busBodyTypes', metavar='bus or coach body classes',
+                      type=str, nargs='*', default=defaultbusBodyTypes,
+                      help=("Vehicle body classes that are considered to "
+                            "represent vehicles that are either buses or coaches. "
+                            "Default '{}'.").format("', '".join(defaultbusBodyTypes)))
+  parser.add_argument('--trustPreviousDecisions', metavar='trust previous decisions',
+                      type=bool, nargs='?', default=True,
+                      help=("Will automatically assign the bus/coach value "
+                            "that was previously assigned by a previous "
+                            "operation. Default True."))
+  parser.add_argument('--previousDecisionsFile', metavar='previous decisions file',
+                      type=str, nargs='?', default='gotAlready.csv',
+                      help=("File to use for the previous decisions. Default "
+                            "True."))
+
   # More parameters to be added as needed.
   pargs = parser.parse_args()
+  pargs = vars(pargs)
 
-  if pargs.inputfile == 'TEST':
+  if pargs['inputfile'] == 'TEST':
     rns = ['SK07CAA', 'SK07CAE', 'SK07CAO', 'SK07CAU', 'SK07CAV', 'SK07CAX',
           'SK07CBF', 'SK07CBU', 'SK07CBV', 'SK07CBX', 'SK07CBY', 'SK07CCA',
           'SK07CAA', 'SK07CAE', 'SK07CAO', 'SK07CAU', 'SK07CAA', 'SK07CAE']
@@ -175,4 +315,4 @@ if __name__ == '__main__':
     for key, value in BCs.items():
       print('{}: {}'.format(key, value))
   else:
-    testFromFile(pargs.inputfile)
+    testFromFile(**pargs)
