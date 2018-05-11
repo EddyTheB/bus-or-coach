@@ -54,7 +54,7 @@ KSK982,C,Dundee
 KSK983,C,Dundee
 KX15GBU,C,Dundee
 KX51UCS,B,Dundee
-LSK481,C,"Dundee, Aberdeen, Edinburgh"
+LSK481,C,"Aberdeen, Edinburgh, Dundee"
 LSK832,C,Dundee
 LSK873,C,"Dundee, Edinburgh"
 LSK874,C,Dundee
@@ -67,7 +67,7 @@ MX13BMO,C,Dundee
 MX15KKU,C,Dundee
 OU14SVK,C,Dundee
 PO63FMY,C,Dundee
-PSU619,C,"Dundee, Aberdeen"
+PSU619,C,"Aberdeen, Dundee"
 PX05ELW,B,Dundee
 PX05EMK,B,Dundee
 PYJ136,C,Dundee
@@ -85,7 +85,7 @@ SA15VUY,B,Dundee
 SF04VTE,B,Dundee
 SF08GTU,C,"Dundee, Edinburgh"
 SF08MYP,B,Dundee
-SF13FME,C,"Dundee, Aberdeen"
+SF13FME,C,"Aberdeen, Dundee"
 SF17VMT,B,Dundee
 SF17VMU,B,Dundee
 SF17VMV,B,Dundee
@@ -96,13 +96,13 @@ SF17VMZ,B,Dundee
 SF17VNZ,B,Dundee
 SF53BYN,B,Dundee
 SF59BXM,C,Dundee
-SF62CUA,B,"Dundee, Aberdeen"
-SJ15PUX,B,"Dundee, Aberdeen"
+SF62CUA,B,"Aberdeen, Dundee"
+SJ15PUX,B,"Aberdeen, Dundee"
 SJ15PUY,B,Dundee
 SJ15PVE,B,Dundee
 SJ15PVF,B,Dundee
 SJ15PVK,B,Dundee
-SJ15PVL,B,"Dundee, Aberdeen"
+SJ15PVL,B,"Aberdeen, Dundee"
 SJ15PVN,B,Dundee
 SJ15PVO,B,Dundee
 SJ16CUG,C,Dundee
@@ -169,7 +169,7 @@ SP57CPE,B,Dundee
 SP58AZC,B,Dundee
 SP58BYY,B,Dundee
 SP59AON,B,Dundee
-SP59AOO,B,"Dundee, Aberdeen"
+SP59AOO,B,"Aberdeen, Dundee"
 SP59AOV,B,Dundee
 SP59AOY,B,Dundee
 SP59AOZ,B,Dundee
@@ -228,7 +228,7 @@ SV60CCX,B,Dundee
 SV62BBK,C,Dundee
 SV62BFF,C,Dundee
 SW09UMB,C,Dundee
-SW09UNS,C,"Dundee, Aberdeen"
+SW09UNS,C,"Aberdeen, Dundee"
 UAP969,C,Dundee
 US60LFS,B,Dundee
 V426MOA,B,Dundee
@@ -247,13 +247,13 @@ YBZ818,C,Dundee
 YE52FGV,B,Dundee
 YIJ351,C,Dundee
 YIL696,C,Dundee
-YJ14LHC,C,"Dundee, Aberdeen"
+YJ14LHC,C,"Aberdeen, Dundee"
 YJ15AEF,B,Dundee
 YJ15AEG,B,Dundee
 YJ15AMV,B,Dundee
 YJ15ANF,B,Dundee
 YJ16EJE,C,Dundee
-YJ16EJF,C,"Dundee, Aberdeen"
+YJ16EJF,C,"Aberdeen, Dundee"
 YJ16EJK,C,Dundee
 YJ66FKH,C,Dundee
 YJU694,C,Dundee
@@ -263,14 +263,14 @@ YN15EKJ,C,Dundee
 YN17ONX,C,Dundee
 YSV607,C,Dundee
 YX17OGN,C,Dundee
-YX64WBT,C,"Dundee, Aberdeen"
-YX64WBU,C,"Dundee, Aberdeen"
-YX64WBV,C,"Dundee, Aberdeen"
-YX64WBW,C,"Dundee, Aberdeen"
-YX64WBY,C,"Dundee, Aberdeen"
-YX64WBZ,C,"Dundee, Aberdeen"
-YX64WCA,C,"Dundee, Aberdeen"
-YX66WOJ,C,"Dundee, Aberdeen"
+YX64WBT,C,"Aberdeen, Dundee"
+YX64WBU,C,"Aberdeen, Dundee"
+YX64WBV,C,"Aberdeen, Dundee"
+YX64WBW,C,"Aberdeen, Dundee"
+YX64WBY,C,"Aberdeen, Dundee"
+YX64WBZ,C,"Aberdeen, Dundee"
+YX64WCA,C,"Aberdeen, Dundee"
+YX66WOJ,C,"Aberdeen, Dundee"
 SH54WXR,B,Edinburgh
 SK52OHL,B,Edinburgh
 LSK877,C,Edinburgh
@@ -361,20 +361,20 @@ EN59ZYC,M,Edinburgh
 LSK879,C,Edinburgh
 SM02HPX,M,Edinburgh
 YN13BXD,C,Edinburgh
-LSK512,C,"Aberdeen, Edinburgh"
+LSK512,C,"Edinburgh, Aberdeen"
 SX09LBA,M,Edinburgh
 SJ66LKZ,C,Edinburgh
 138ASV,C,Edinburgh
 KSK952,C,Edinburgh
 KSK979,C,Edinburgh
-LSK844,C,"Aberdeen, Edinburgh"
+LSK844,C,"Edinburgh, Aberdeen"
 KSK977,C,Edinburgh
 SN57JDK,B,Edinburgh
 JE12MCN,C,Edinburgh
 SN06HBY,B,Edinburgh
 FV57HHC,M,Edinburgh
 SV59CHG,C,Edinburgh
-LSK875,C,"Aberdeen, Edinburgh"
+LSK875,C,"Edinburgh, Aberdeen"
 DY14UVK,B,Edinburgh
 SN09FBE,B,Edinburgh
 SN06JAU,B,Edinburgh
@@ -438,7 +438,7 @@ YSU196,C,Edinburgh
 SF65CZS,C,Edinburgh
 RA06OHZ,M,Edinburgh
 OUJ969,C,Edinburgh
-PSU617,C,"Aberdeen, Edinburgh"
+PSU617,C,"Edinburgh, Aberdeen"
 KV60WZE,B,Edinburgh
 WA14GGJ,M,Edinburgh
 YB05CEF,M,Edinburgh
@@ -468,7 +468,7 @@ NA64WGN,B,Edinburgh
 SK63LDL,M,Edinburgh
 YJ55YHN,B,Edinburgh
 FY52FVA,M,Edinburgh
-HSK647,C,"Aberdeen, Edinburgh"
+HSK647,C,"Edinburgh, Aberdeen"
 NJ52URF,M,Edinburgh
 N300CHA,C,Edinburgh
 WA07BHE,C,Edinburgh
@@ -741,3 +741,402 @@ KX61GDU,C,Aberdeen
 SV08DHO,C,Aberdeen
 Y701RSA,B,Aberdeen
 SN14FDY,B,Aberdeen
+SV05DXW,B,Aberdeen
+ST63KOE,B,Aberdeen
+SV05DXE,B,Aberdeen
+DK12BXA,B,Aberdeen
+SP14AYY,B,Aberdeen
+SP12TXL,B,Aberdeen
+SN66WZK,B,Aberdeen
+WX54ZHN,C,Aberdeen
+D18CTC,C,Aberdeen
+DK65ALO,B,Aberdeen
+YX54ATY,C,Aberdeen
+CV55AOO,C,Aberdeen
+SN14FDP,B,Aberdeen
+SN14FET,B,Aberdeen
+YN54NYV,C,Aberdeen
+SN09CCE,B,Aberdeen
+PX07HBF,B,Aberdeen
+DK65ALU,B,Aberdeen
+R5MCH,B,Aberdeen
+FJ13GFG,B,Aberdeen
+SV54CFY,B,Aberdeen
+PX07HBE,B,Aberdeen
+SV55FJX,C,Aberdeen
+HSV725,C,Aberdeen
+SL14DCZ,B,Aberdeen
+D20CTC,C,Aberdeen
+SV12CZR,B,Aberdeen
+SN17BKX,C,Aberdeen
+SN13CMV,B,Aberdeen
+SL14DBZ,B,Aberdeen
+SN16OMR,B,Aberdeen
+KX61GEK,C,Aberdeen
+SV07EHF,B,Aberdeen
+SN13CNK,B,Aberdeen
+SL14DCX,B,Aberdeen
+SN16OMX,B,Aberdeen
+SN13CNJ,B,Aberdeen
+Y629RSA,B,Aberdeen
+KX61GEJ,C,Aberdeen
+BX54VNV,B,Aberdeen
+SN16OMW,B,Aberdeen
+DSV943,B,Aberdeen
+SN13CMY,B,Aberdeen
+SV14DMU,B,Aberdeen
+CN04XCK,B,Aberdeen
+KX56JZL,C,Aberdeen
+SN16OMP,B,Aberdeen
+SN13CMU,B,Aberdeen
+5397LJ,C,Aberdeen
+448GWL,C,Aberdeen
+SN13CNA,B,Aberdeen
+SN16OMV,B,Aberdeen
+SN09CBU,B,Aberdeen
+BX11HFT,C,Aberdeen
+KX61GEU,C,Aberdeen
+SN13CMX,B,Aberdeen
+SN13CNV,B,Aberdeen
+SN16OMT,B,Aberdeen
+SV12CZP,B,Aberdeen
+SV08FHD,B,Aberdeen
+SN13CNO,B,Aberdeen
+SN13CMZ,B,Aberdeen
+SV11FFX,C,Aberdeen
+SN16OMU,B,Aberdeen
+FXZ8492,C,Aberdeen
+DK65AJU,B,Aberdeen
+SN16OMS,B,Aberdeen
+SV58BNA,B,Aberdeen
+Y627RSA,B,Aberdeen
+SN13CNF,B,Aberdeen
+SV06FTJ,B,Aberdeen
+KX58NBO,C,Aberdeen
+SN13COH,B,Aberdeen
+SK63ATX,B,Aberdeen
+SN13CNU,B,Aberdeen
+Y639RSA,B,Aberdeen
+L77CTC,C,Aberdeen
+SN13CMO,B,Aberdeen
+KX61GFA,C,Aberdeen
+SV09EGE,C,Aberdeen
+SN16OMO,B,Aberdeen
+SN13CNE,B,Aberdeen
+SV55FJY,C,Aberdeen
+SN13CNC,B,Aberdeen
+SN57EHC,B,Aberdeen
+SV14FZD,B,Aberdeen
+9637EL,C,Aberdeen
+SP59APF,B,Aberdeen
+Y632RSA,B,Aberdeen
+SV61CUK,C,Aberdeen
+FE63ZBW,B,Aberdeen
+SV55FJU,C,Aberdeen
+SP62CVB,B,Aberdeen
+SK63LZL,B,Aberdeen
+SF08GTY,C,Aberdeen
+SK63ATV,B,Aberdeen
+SV09EGK,C,Aberdeen
+KX58NCC,C,Aberdeen
+SL14DCV,B,Aberdeen
+N447XVA,C,Aberdeen
+S901CCD,C,Aberdeen
+SV57AKK,C,Aberdeen
+SV61CUC,C,Aberdeen
+SL14DBX,B,Aberdeen
+SV12CZL,B,Aberdeen
+SV55FJP,C,Aberdeen
+SP14AYX,B,Aberdeen
+X624NSS,B,Aberdeen
+SY05DRX,B,Aberdeen
+NIW565,C,Aberdeen
+YD63UYU,B,Aberdeen
+MIL2430,C,Aberdeen
+SN14FDU,B,Aberdeen
+SP57CNK,B,Aberdeen
+OU04NJX,B,Aberdeen
+SN13CPE,B,Aberdeen
+SV12CZK,B,Aberdeen
+KX61GFE,C,Aberdeen
+KX58NBZ,C,Aberdeen
+SV61CUJ,C,Aberdeen
+SV09BHL,C,Aberdeen
+SV56BVU,C,Aberdeen
+PX59CVC,C,Aberdeen
+SP59APK,B,Aberdeen
+WA54LSX,C,Aberdeen
+YN06CYJ,C,Aberdeen
+DK65AHY,C,Aberdeen
+DG16JXA,B,Aberdeen
+DK12BXR,B,Aberdeen
+SV56BWA,B,Aberdeen
+SV06FTF,C,Aberdeen
+SY07CVA,B,Aberdeen
+N590GBW,C,Aberdeen
+SV55FJO,C,Aberdeen
+SV55FKH,C,Aberdeen
+SV08DHX,C,Aberdeen
+YG17SUY,C,Aberdeen
+SN62GXG,C,Aberdeen
+SF04WMY,C,Aberdeen
+SV08FXR,B,Aberdeen
+SV08FXT,B,Aberdeen
+SV55FKA,C,Aberdeen
+SV08FXU,B,Aberdeen
+SV08FYB,B,Aberdeen
+SV08FXP,B,Aberdeen
+SN13AOP,C,Aberdeen
+SV55EES,C,Aberdeen
+YN54APF,C,Aberdeen
+WK15YCX,B,Aberdeen
+SV08FXX,B,Aberdeen
+WA05UNF,C,Aberdeen
+KX61GDZ,C,Aberdeen
+SV08FHG,B,Aberdeen
+SV08FXZ,B,Aberdeen
+SV08FYA,B,Aberdeen
+SV08FXS,B,Aberdeen
+SV08FXW,B,Aberdeen
+SV06GRU,B,Aberdeen
+SV58BMY,B,Aberdeen
+LF14CTZ,B,Aberdeen
+KX61GDY,C,Aberdeen
+SV58BND,B,Aberdeen
+SY07CVB,B,Aberdeen
+DK65AJV,B,Aberdeen
+PX07HBG,B,Aberdeen
+SV10CUK,C,Aberdeen
+CV55ANP,C,Aberdeen
+YN05XBC,C,Aberdeen
+SV08FXY,B,Aberdeen
+SV12DAA,B,Aberdeen
+SV12DAO,B,Aberdeen
+SN09CBO,B,Aberdeen
+SV12CZY,B,Aberdeen
+X622NSS,B,Aberdeen
+SV07EHL,B,Aberdeen
+SV12CZU,B,Aberdeen
+SV08FHA,B,Aberdeen
+SN09CAV,B,Aberdeen
+SV08FHB,B,Aberdeen
+SV12CZX,B,Aberdeen
+SV06GRK,B,Aberdeen
+SN14FEF,B,Aberdeen
+SN09CCZ,B,Aberdeen
+SV57EYK,B,Aberdeen
+SV12CZW,B,Aberdeen
+SN14FEP,B,Aberdeen
+SV08FHE,B,Aberdeen
+SV12CZZ,B,Aberdeen
+Y626RSA,B,Aberdeen
+SV57EYJ,B,Aberdeen
+SV08FHF,B,Aberdeen
+Y635RSA,B,Aberdeen
+SV62BZA,B,Aberdeen
+SN14FEJ,B,Aberdeen
+SN14ECZ,B,Aberdeen
+SV12CZT,B,Aberdeen
+SL14DBY,B,Aberdeen
+SN14FDZ,B,Aberdeen
+SV07EHD,B,Aberdeen
+SV07EHB,B,Aberdeen
+SV12CZS,B,Aberdeen
+VU06JDO,B,Aberdeen
+X621NSS,B,Aberdeen
+SV58BMZ,B,Aberdeen
+SV07EHK,B,Aberdeen
+SV08FHC,B,Aberdeen
+SN14EDR,B,Aberdeen
+SK63ATU,B,Aberdeen
+P569MSX,C,Aberdeen
+SP55DDE,B,Aberdeen
+YJ05XOG,B,Aberdeen
+FN63PWX,C,Aberdeen
+SP12TXJ,B,Aberdeen
+VX04GHZ,B,Aberdeen
+SN16OMD,B,Aberdeen
+SN16OMY,B,Aberdeen
+D16CTC,C,Aberdeen
+LSK830,C,Aberdeen
+SF62CPU,C,Aberdeen
+SV12CZM,B,Aberdeen
+SN08HVA,B,Aberdeen
+SF16MVL,B,Aberdeen
+BF64XYT,B,Aberdeen
+SV07KXS,B,Aberdeen
+FSU395,C,Aberdeen
+LSK570,C,Aberdeen
+NH14NBH,C,Aberdeen
+SN13CNY,B,Aberdeen
+Y634RSA,B,Aberdeen
+SN65ZGB,B,Aberdeen
+SV07EHG,B,Aberdeen
+SN65ZGE,B,Aberdeen
+SN09CCY,B,Aberdeen
+SV05DXA,B,Aberdeen
+SN14FEX,B,Aberdeen
+SN09CAU,B,Aberdeen
+SV05DXS,B,Aberdeen
+Y638RSA,B,Aberdeen
+SN09CCO,B,Aberdeen
+SF62CLV,C,Aberdeen
+SV05DXT,B,Aberdeen
+X623NSS,B,Aberdeen
+SN09CDE,B,Aberdeen
+SN09CBV,B,Aberdeen
+SN09CCU,B,Aberdeen
+SN65ZGG,B,Aberdeen
+SN13CNZ,B,Aberdeen
+SN13COJ,B,Aberdeen
+SN14FEK,B,Aberdeen
+Y628RSA,B,Aberdeen
+Y636RSA,B,Aberdeen
+SV14DMX,B,Aberdeen
+SN09CBX,B,Aberdeen
+FSU382,B,Aberdeen
+SV05DXC,B,Aberdeen
+SV05DXO,B,Aberdeen
+SN09CCJ,B,Aberdeen
+SV64BRF,B,Aberdeen
+SV05DXX,B,Aberdeen
+SN09CAX,B,Aberdeen
+SV64BRX,B,Aberdeen
+SN65ZFZ,B,Aberdeen
+SL64OXN,B,Aberdeen
+SN09CCA,B,Aberdeen
+SN09CCX,B,Aberdeen
+SN09CCK,B,Aberdeen
+EY54BPZ,B,Aberdeen
+SN65ZGC,B,Aberdeen
+SN09CDO,B,Aberdeen
+SV12CZF,B,Aberdeen
+SN09CBY,B,Aberdeen
+SV08DHU,B,Aberdeen
+SN09CDF,B,Aberdeen
+SN09CCD,B,Aberdeen
+YX65ZJZ,C,Aberdeen
+YX64WCC,C,Aberdeen
+AO02RCY,C,Aberdeen
+SN09CDK,B,Aberdeen
+SV57FUM,B,Aberdeen
+WX54ZHM,C,Aberdeen
+SV06GRX,B,Aberdeen
+SV05DXP,B,Aberdeen
+Y631RSA,B,Aberdeen
+SV05DXH,B,Aberdeen
+SV05DXY,B,Aberdeen
+SV05DXU,B,Aberdeen
+SV05DXF,B,Aberdeen
+L44CTC,C,Aberdeen
+D7CTC,C,Aberdeen
+YN54NXZ,C,Aberdeen
+SF05KUH,B,Aberdeen
+VAV15,C,Aberdeen
+LSK825,C,Aberdeen
+SF13FMC,C,Aberdeen
+SF16KUT,C,Aberdeen
+YJ14LHD,C,Aberdeen
+SF13FMK,C,Aberdeen
+LSK530,C,Aberdeen
+SF62CMV,C,Aberdeen
+YX65ZKK,C,Aberdeen
+YJ64AUR,C,Aberdeen
+SV62BDX,C,Aberdeen
+R20TPT,B,Aberdeen
+J90JFJ,C,Aberdeen
+MX61LGO,B,Aberdeen
+CN04XDR,B,Aberdeen
+MJ09KTP,B,Aberdeen
+YJ66FFS,C,Aberdeen
+SP59AOT,B,Aberdeen
+FE63ZBX,B,Aberdeen
+YK05CBF,B,Aberdeen
+YX63NGU,C,Aberdeen
+SV08FZS,B,Aberdeen
+SF05FNY,B,Aberdeen
+MX61LFZ,C,Aberdeen
+YX65ZKT,C,Aberdeen
+BK11WPV,B,Aberdeen
+R301BJA,C,Aberdeen
+SV59CHD,C,Aberdeen
+YX65ZKG,C,Aberdeen
+YX65ZKF,C,Aberdeen
+YX65ZKL,C,Aberdeen
+SV57BYU,B,Aberdeen
+YX65ZKC,C,Aberdeen
+MX61KYB,C,Aberdeen
+YX65ZKD,C,Aberdeen
+YX65ZKR,C,Aberdeen
+SV57BYR,B,Aberdeen
+SV54EKU,C,Aberdeen
+YX65ZKB,C,Aberdeen
+YX65ZKE,C,Aberdeen
+YX65ZKN,C,Aberdeen
+YX65ZKP,C,Aberdeen
+YX65ZKJ,C,Aberdeen
+YX65ZKH,C,Aberdeen
+SV12CZO,B,Aberdeen
+YX65ZKO,C,Aberdeen
+SN14FDX,B,Aberdeen
+JR13AAA,C,Aberdeen
+IB9997,C,Aberdeen
+SP62BHK,B,Aberdeen
+D9CTC,C,Aberdeen
+YX63LHE,B,Aberdeen
+SN60AOY,C,Aberdeen
+SM15VKC,B,Aberdeen
+SN66VZS,B,Aberdeen
+SN12ASX,B,Aberdeen
+SV59CHO,C,Aberdeen
+NIW525,C,Aberdeen
+CN53AMU,B,Aberdeen
+SP14AYC,B,Aberdeen
+YEZ6520,B,Aberdeen
+FSU394,C,Aberdeen
+BF65HXK,B,Aberdeen
+SP15CLO,B,Aberdeen
+SN56FEP,B,Aberdeen
+L99CTC,C,Aberdeen
+SV08DHK,C,Aberdeen
+YJ05XOC,B,Aberdeen
+PSU628,C,Aberdeen
+SL14DCU,B,Aberdeen
+SV07EHE,B,Aberdeen
+SV57EYH,B,Aberdeen
+BMC2T,C,Aberdeen
+L80CTC,C,Aberdeen
+SP59APX,B,Aberdeen
+Y724HWT,C,Aberdeen
+SF06KHV,B,Aberdeen
+SM12SON,C,Aberdeen
+SP59AOX,B,Aberdeen
+SV64BRZ,B,Aberdeen
+SF62CZN,C,Aberdeen
+WA14CMU,C,Aberdeen
+SV55EEP,C,Aberdeen
+BL16FZY,B,Aberdeen
+SV12CZJ,B,Aberdeen
+SV57BYT,B,Aberdeen
+D15CTC,C,Aberdeen
+CN09AAZ,B,Aberdeen
+A3MWN,C,Aberdeen
+LK11GFZ,C,Aberdeen
+SF13FMD,C,Aberdeen
+LSK807,C,Aberdeen
+SV62BXY,B,Aberdeen
+D8CTC,C,Aberdeen
+SN60BFF,B,Aberdeen
+KX58NCA,B,Aberdeen
+SV09EGJ,C,Aberdeen
+YJ16EJO,C,Aberdeen
+SV09EGF,C,Aberdeen
+PX59CVB,C,Aberdeen
+SV61CUG,C,Aberdeen
+VU06KFN,B,Aberdeen
+SP08FUV,C,Aberdeen
+CN09ABO,B,Aberdeen
+SV55FJZ,C,Aberdeen
+SV61CUA,C,Aberdeen
+SF55RKA,C,Aberdeen
+SV08FZP,B,Aberdeen
