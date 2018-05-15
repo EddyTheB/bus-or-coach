@@ -46,20 +46,20 @@ F2LNE,C,"Dundee, Edinburgh"
 FJ57KJF,C,Dundee
 FJ60HXU,C,Dundee
 H3KFC,C,Dundee
-HSK648,C,Dundee
+HSK648,C,"Glasgow, Dundee"
 HSK791,B,Dundee
 HY14BUS,B,Dundee
 JSU542,C,Dundee
-KSK982,C,Dundee
-KSK983,C,Dundee
+KSK982,C,"Glasgow, Dundee"
+KSK983,C,"Glasgow, Dundee"
 KX15GBU,C,Dundee
 KX51UCS,B,Dundee
 LSK481,C,"Aberdeen, Edinburgh, Dundee"
 LSK832,C,Dundee
-LSK873,C,"Dundee, Edinburgh"
-LSK874,C,Dundee
-LSK876,C,"Dundee, Edinburgh"
-LSK878,C,Dundee
+LSK873,C,"Edinburgh, Glasgow, Dundee"
+LSK874,C,"Glasgow, Dundee"
+LSK876,C,"Edinburgh, Glasgow, Dundee"
+LSK878,C,"Glasgow, Dundee"
 M17YNE,C,Dundee
 M688TDB,B,Dundee
 M77GEC,C,Dundee
@@ -85,7 +85,7 @@ SA15VUY,B,Dundee
 SF04VTE,B,Dundee
 SF08GTU,C,"Dundee, Edinburgh"
 SF08MYP,B,Dundee
-SF13FME,C,"Aberdeen, Dundee"
+SF13FME,C,"Glasgow, Aberdeen, Dundee"
 SF17VMT,B,Dundee
 SF17VMU,B,Dundee
 SF17VMV,B,Dundee
@@ -206,7 +206,7 @@ SP62BJX,B,Dundee
 SP62BKA,B,Dundee
 SP62BKF,B,Dundee
 SP62BMY,C,Dundee
-SP62BNB,C,Dundee
+SP62BNB,C,"Glasgow, Dundee"
 SP62BOH,B,Dundee
 SP62BRV,B,Dundee
 SP62BSO,B,Dundee
@@ -214,18 +214,18 @@ SP62BTX,B,Dundee
 SP62BUO,B,Dundee
 SP62BVZ,B,Dundee
 SP62CFE,C,Dundee
-SP62CFM,C,Dundee
-SP62CGY,C,Dundee
+SP62CFM,C,"Glasgow, Dundee"
+SP62CGY,C,"Glasgow, Dundee"
 SP62CHK,C,Dundee
 ST52NTM,B,Dundee
-SV12BZN,C,Dundee
+SV12BZN,C,"Glasgow, Dundee"
 SV12CJU,B,Dundee
 SV55BZX,B,Dundee
 SV55CCK,B,Dundee
 SV59CHC,C,Dundee
 SV60CCO,B,Dundee
 SV60CCX,B,Dundee
-SV62BBK,C,Dundee
+SV62BBK,C,"Glasgow, Dundee"
 SV62BFF,C,Dundee
 SW09UMB,C,Dundee
 SW09UNS,C,"Aberdeen, Dundee"
@@ -247,13 +247,13 @@ YBZ818,C,Dundee
 YE52FGV,B,Dundee
 YIJ351,C,Dundee
 YIL696,C,Dundee
-YJ14LHC,C,"Aberdeen, Dundee"
+YJ14LHC,C,"Glasgow, Aberdeen, Dundee"
 YJ15AEF,B,Dundee
 YJ15AEG,B,Dundee
 YJ15AMV,B,Dundee
 YJ15ANF,B,Dundee
-YJ16EJE,C,Dundee
-YJ16EJF,C,"Aberdeen, Dundee"
+YJ16EJE,C,"Glasgow, Dundee"
+YJ16EJF,C,"Glasgow, Aberdeen, Dundee"
 YJ16EJK,C,Dundee
 YJ66FKH,C,Dundee
 YJU694,C,Dundee
@@ -273,10 +273,10 @@ YX64WCA,C,"Aberdeen, Dundee"
 YX66WOJ,C,"Aberdeen, Dundee"
 SH54WXR,B,Edinburgh
 SK52OHL,B,Edinburgh
-LSK877,C,Edinburgh
+LSK877,C,"Edinburgh, Glasgow"
 SM16HBH,B,Edinburgh
 SK06AHL,B,Edinburgh
-FN63PWU,C,Edinburgh
+FN63PWU,C,"Edinburgh, Glasgow"
 M333EMH,B,Edinburgh
 SN11CHZ,M,Edinburgh
 SK10XAW,M,Edinburgh
@@ -295,7 +295,7 @@ N7DOT,C,Edinburgh
 YU05TWK,B,Edinburgh
 ST58JKE,M,Edinburgh
 BJ12XFP,B,Edinburgh
-YN13EHF,B,Edinburgh
+YN13EHF,B,"Edinburgh, Glasgow"
 SF64NFD,C,Edinburgh
 YN16UAW,C,Edinburgh
 SJ66LLA,C,Edinburgh
@@ -331,13 +331,13 @@ N200CHA,C,Edinburgh
 LX58DJK,M,Edinburgh
 YN16BNK,B,Edinburgh
 SN10GJV,B,Edinburgh
-FN63PWY,C,Edinburgh
+FN63PWY,C,"Edinburgh, Glasgow"
 PM63AAA,C,Edinburgh
 TK07RAX,M,Edinburgh
 BFZ3131,C,Edinburgh
 SN04NGU,B,Edinburgh
 JSV440,C,Edinburgh
-KSK981,C,Edinburgh
+KSK981,C,"Edinburgh, Glasgow"
 WX13HNU,B,Edinburgh
 N500CHA,C,Edinburgh
 SN10GJU,B,Edinburgh
@@ -358,7 +358,7 @@ KSK951,C,Edinburgh
 ND16AAA,C,Edinburgh
 W7HET,M,Edinburgh
 EN59ZYC,M,Edinburgh
-LSK879,C,Edinburgh
+LSK879,C,"Edinburgh, Glasgow"
 SM02HPX,M,Edinburgh
 YN13BXD,C,Edinburgh
 LSK512,C,"Edinburgh, Aberdeen"
@@ -366,7 +366,7 @@ SX09LBA,M,Edinburgh
 SJ66LKZ,C,Edinburgh
 138ASV,C,Edinburgh
 KSK952,C,Edinburgh
-KSK979,C,Edinburgh
+KSK979,C,"Edinburgh, Glasgow"
 LSK844,C,"Edinburgh, Aberdeen"
 KSK977,C,Edinburgh
 SN57JDK,B,Edinburgh
@@ -374,13 +374,13 @@ JE12MCN,C,Edinburgh
 SN06HBY,B,Edinburgh
 FV57HHC,M,Edinburgh
 SV59CHG,C,Edinburgh
-LSK875,C,"Edinburgh, Aberdeen"
+LSK875,C,"Edinburgh, Glasgow, Aberdeen"
 DY14UVK,B,Edinburgh
 SN09FBE,B,Edinburgh
 SN06JAU,B,Edinburgh
 ST56VFZ,M,Edinburgh
 ST62PFV,M,Edinburgh
-LSK813,C,Edinburgh
+LSK813,C,"Edinburgh, Glasgow"
 SN09EZX,B,Edinburgh
 FJ08KNY,C,Edinburgh
 V28BUS,C,Edinburgh
@@ -391,7 +391,7 @@ EF16TZS,B,Edinburgh
 V650PGG,B,Edinburgh
 PN13TFK,C,Edinburgh
 YL64BAA,M,Edinburgh
-KSK980,C,Edinburgh
+KSK980,C,"Edinburgh, Glasgow"
 YN16WUX,C,Edinburgh
 KSK976,C,Edinburgh
 VU08VXW,M,Edinburgh
@@ -410,7 +410,7 @@ SN14CYJ,B,Edinburgh
 YN08MPV,C,Edinburgh
 SN57MSU,B,Edinburgh
 M12DMD,M,Edinburgh
-KSK978,C,Edinburgh
+KSK978,C,"Edinburgh, Glasgow"
 BV56GXZ,M,Edinburgh
 YN16BPU,C,Edinburgh
 PO16HSU,C,Edinburgh
@@ -846,7 +846,7 @@ SV57AKK,C,Aberdeen
 SV61CUC,C,Aberdeen
 SL14DBX,B,Aberdeen
 SV12CZL,B,Aberdeen
-SV55FJP,C,Aberdeen
+SV55FJP,C,"Glasgow, Aberdeen"
 SP14AYX,B,Aberdeen
 X624NSS,B,Aberdeen
 SY05DRX,B,Aberdeen
@@ -955,7 +955,7 @@ YJ05XOG,B,Aberdeen
 FN63PWX,C,Aberdeen
 SP12TXJ,B,Aberdeen
 VX04GHZ,B,Aberdeen
-SN16OMD,B,Aberdeen
+SN16OMD,B,"Glasgow, Aberdeen"
 SN16OMY,B,Aberdeen
 D16CTC,C,Aberdeen
 LSK830,C,Aberdeen
@@ -1041,8 +1041,8 @@ SF13FMK,C,Aberdeen
 LSK530,C,Aberdeen
 SF62CMV,C,Aberdeen
 YX65ZKK,C,Aberdeen
-YJ64AUR,C,Aberdeen
-SV62BDX,C,Aberdeen
+YJ64AUR,C,"Glasgow, Aberdeen"
+SV62BDX,C,"Glasgow, Aberdeen"
 R20TPT,B,Aberdeen
 J90JFJ,C,Aberdeen
 MX61LGO,B,Aberdeen
@@ -1052,7 +1052,7 @@ YJ66FFS,C,Aberdeen
 SP59AOT,B,Aberdeen
 FE63ZBX,B,Aberdeen
 YK05CBF,B,Aberdeen
-YX63NGU,C,Aberdeen
+YX63NGU,C,"Glasgow, Aberdeen"
 SV08FZS,B,Aberdeen
 SF05FNY,B,Aberdeen
 MX61LFZ,C,Aberdeen
@@ -1129,7 +1129,7 @@ D8CTC,C,Aberdeen
 SN60BFF,B,Aberdeen
 KX58NCA,B,Aberdeen
 SV09EGJ,C,Aberdeen
-YJ16EJO,C,Aberdeen
+YJ16EJO,C,"Glasgow, Aberdeen"
 SV09EGF,C,Aberdeen
 PX59CVB,C,Aberdeen
 SV61CUG,C,Aberdeen
@@ -1140,3 +1140,350 @@ SV55FJZ,C,Aberdeen
 SV61CUA,C,Aberdeen
 SF55RKA,C,Aberdeen
 SV08FZP,B,Aberdeen
+P100WCM,B,Glasgow
+P200WCM,B,Glasgow
+YN55RDV,B,Glasgow
+EGB60T,B,Glasgow
+GSO84V,B,Glasgow
+OBX51,B,Glasgow
+EPK1V,B,Glasgow
+TSJ61S,B,Glasgow
+LX59CNY,B,Glasgow
+LX59CPF,B,Glasgow
+LX59CPN,B,Glasgow
+LX59CPY,B,Glasgow
+OOB32X,B,Glasgow
+BU05HFK,B,Glasgow
+MX56YNU,B,Glasgow
+MX56YOV,B,Glasgow
+MX57CAE,B,Glasgow
+YX10EAM,B,Glasgow
+YX10EAO,B,Glasgow
+YX10EAP,B,Glasgow
+YX61ELO,B,Glasgow
+YX61ELU,B,Glasgow
+YX61ELV,B,Glasgow
+YX61ELW,B,Glasgow
+YX61EMF,B,Glasgow
+YX61EMJ,B,Glasgow
+YX61EMK,B,Glasgow
+YX12DJF,B,Glasgow
+YX12DJJ,B,Glasgow
+YX12DJK,B,Glasgow
+YX12DJO,B,Glasgow
+YX12DJU,B,Glasgow
+YX12DJV,B,Glasgow
+YX12DJY,B,Glasgow
+MX12DYP,B,Glasgow
+YD63VBZ,B,Glasgow
+YJ15AXU,B,Glasgow
+YJ15AXV,B,Glasgow
+YJ65EWH,B,Glasgow
+YJ65EWK,B,Glasgow
+YJ65EWL,B,Glasgow
+SN65ZGZ,B,Glasgow
+SN65ZHA,B,Glasgow
+YJ17CPU,B,Glasgow
+YJ17CPX,B,Glasgow
+YJ15AOY,B,Glasgow
+YJ15AOZ,B,Glasgow
+YX12CHO,B,Glasgow
+YX12CJO,B,Glasgow
+YX12CJU,B,Glasgow
+YJ14BDE,B,Glasgow
+YJ14BDF,B,Glasgow
+YX11CVU,B,Glasgow
+YX62AFY,B,Glasgow
+YD63VBY,B,Glasgow
+YX60CKA,B,Glasgow
+YD63VFE,B,Glasgow
+YJ15AOE,B,Glasgow
+YX10AYK,B,Glasgow
+YX59FZK,B,Glasgow
+YX09FNG,B,Glasgow
+BX58BEY,B,Glasgow
+SN57DXL,B,Glasgow
+SN57DXM,B,Glasgow
+SF04RHK,B,Glasgow
+SF05LFT,B,Glasgow
+SF05LFU,B,Glasgow
+SF05LFV,B,Glasgow
+SF05LFW,B,Glasgow
+SK15HDO,B,Glasgow
+SK15HDU,B,Glasgow
+SK15HDV,B,Glasgow
+SK15HDX,B,Glasgow
+SK15HDY,B,Glasgow
+SK15HDZ,B,Glasgow
+SK15HEJ,B,Glasgow
+SK15HEU,B,Glasgow
+YX65RDY,B,Glasgow
+YX65RDZ,B,Glasgow
+YX65REU,B,Glasgow
+YX65RFE,B,Glasgow
+YX65RFF,B,Glasgow
+YX65RFJ,B,Glasgow
+YX65RFK,B,Glasgow
+YX65RFL,B,Glasgow
+SN65OFJ,B,Glasgow
+SN65OFK,B,Glasgow
+SN65OFL,B,Glasgow
+SN65OFM,B,Glasgow
+BX56VTK,B,Glasgow
+BX56VTL,B,Glasgow
+BV57JYG,B,Glasgow
+BV57JYH,B,Glasgow
+BV08ZWC,B,Glasgow
+BV08ZWP,B,Glasgow
+BU06HSV,B,Glasgow
+CX55EAA,B,Glasgow
+CX55EAC,B,Glasgow
+GK04NWX,B,Glasgow
+BL57OXH,B,Glasgow
+BK08NAO,B,Glasgow
+BV08ZWF,B,Glasgow
+50WXW,B,Glasgow
+7UUC,B,Glasgow
+99SXL,B,Glasgow
+99HGX,B,Glasgow
+66XKW,B,Glasgow
+YJ09CVH,B,Glasgow
+YJ09CVK,B,Glasgow
+YJ09CVL,B,Glasgow
+YJ09CUV,B,Glasgow
+YJ09CVM,B,Glasgow
+YJ09CVN,B,Glasgow
+YJ09CVO,B,Glasgow
+YJ09CVR,B,Glasgow
+YJ09CUW,B,Glasgow
+YJ09CUX,B,Glasgow
+SN59AWY,B,Glasgow
+SN59AWZ,B,Glasgow
+BV08ZWG,B,Glasgow
+SN59BAA,B,Glasgow
+SN59BBE,B,Glasgow
+YY64GRF,B,Glasgow
+YY64GWN,B,Glasgow
+YY64GWO,B,Glasgow
+YY64GWP,B,Glasgow
+YY64GWU,B,Glasgow
+YY64GWV,B,Glasgow
+YY64YKD,B,Glasgow
+YY64YKE,B,Glasgow
+YY64YKF,B,Glasgow
+YY64YKG,B,Glasgow
+YY64YKH,B,Glasgow
+YX15OXH,B,Glasgow
+YX15OXJ,B,Glasgow
+YX15OXK,B,Glasgow
+YX15OXL,B,Glasgow
+YX15OXM,B,Glasgow
+YX15OXN,B,Glasgow
+YX15OXP,B,Glasgow
+YX15OXR,B,Glasgow
+YX15OXS,B,Glasgow
+YX08HCC,B,Glasgow
+BF67WKH,B,Glasgow
+BF67WKK,B,Glasgow
+BF67WKL,B,Glasgow
+BF67WKM,B,Glasgow
+BF67WKN,B,Glasgow
+SF11CWJ,B,Glasgow
+SF11CWK,B,Glasgow
+SF11CWL,B,Glasgow
+SF11CWM,B,Glasgow
+SF11CWN,B,Glasgow
+SF11CWP,B,Glasgow
+SF11CWR,B,Glasgow
+SF11CWT,B,Glasgow
+SF11CWU,B,Glasgow
+SF11CWV,B,Glasgow
+SN59AWX,B,Glasgow
+SN04NHA,B,Glasgow
+SN04NHB,B,Glasgow
+SF57NPK,B,Glasgow
+SF57NPN,B,Glasgow
+SJ57DDZ,B,Glasgow
+SJ57DDY,B,Glasgow
+SJ57DDX,B,Glasgow
+SJ57DDV,B,Glasgow
+SJ57DDU,B,Glasgow
+SF57NMO,B,Glasgow
+SF57NMM,B,Glasgow
+SJ57DDO,B,Glasgow
+SJ57DDN,B,Glasgow
+RX06WPP,B,Glasgow
+RX06WPR,B,Glasgow
+RX06WPT,B,Glasgow
+DX03XEA,B,Glasgow
+DX03XEC,B,Glasgow
+BX03OVZ,B,Glasgow
+SF55HBD,B,Glasgow
+SF04VSZ,B,Glasgow
+YX60BZE,B,Glasgow
+YX60BZF,B,Glasgow
+YX60BZG,B,Glasgow
+FJ11GJX,C,Glasgow
+FJ11GJY,C,Glasgow
+FJ11GKA,C,Glasgow
+FJ11GLV,C,Glasgow
+FJ56YWE,C,Glasgow
+BX64WJN,B,Glasgow
+BX64WJO,B,Glasgow
+BX64WJU,B,Glasgow
+BX64WJV,B,Glasgow
+BX64WJY,B,Glasgow
+BX64WJZ,B,Glasgow
+BV66GWC,B,Glasgow
+BV66GWD,B,Glasgow
+BV66GWE,B,Glasgow
+BV66GWF,B,Glasgow
+BV66GWJ,B,Glasgow
+BV66GWK,B,Glasgow
+BV66GWL,B,Glasgow
+BV66GWM,B,Glasgow
+BV66GWN,B,Glasgow
+BV66GWO,B,Glasgow
+BF67WKJ,B,Glasgow
+10KXJ,B,Glasgow
+15KXB,B,Glasgow
+30KXY,B,Glasgow
+KFZ33,B,Glasgow
+X22BUS,B,Glasgow
+X23MCG,B,Glasgow
+X23MGL,B,Glasgow
+X23OUR,B,Glasgow
+X23SLF,B,Glasgow
+X23SPT,B,Glasgow
+X23TOP,B,Glasgow
+2367AT,C,Glasgow
+511OHU,C,Glasgow
+A17GTG,C,Glasgow
+AE10JTO,C,Glasgow
+BD16YDK,C,Glasgow
+BJ15UVV,B,Glasgow
+BN15WXW,C,Glasgow
+BU14EGC,C,Glasgow
+BU14EHD,C,Glasgow
+BU64MWO,B,Glasgow
+BV67JYT,C,Glasgow
+BV67JYU,C,Glasgow
+BV67JYX,C,Glasgow
+BX04BXP,B,Glasgow
+BX64WJF,B,Glasgow
+BX64WJG,B,Glasgow
+BX64WJJ,B,Glasgow
+BX64WJK,B,Glasgow
+BX64WJL,B,Glasgow
+C16EMH,B,Glasgow
+CN61FAJ,C,Glasgow
+CN61FBD,C,Glasgow
+DSV246,C,Glasgow
+ECZ9122,C,Glasgow
+EG02NZU,B,Glasgow
+F12LNE,C,Glasgow
+F13LNE,B,Glasgow
+F18LNE,C,Glasgow
+F8LNE,C,Glasgow
+FJ14GPV,C,Glasgow
+FJ14GPY,C,Glasgow
+FJ54ZDL,C,Glasgow
+FJ54ZDU,B,Glasgow
+FN02RXA,C,Glasgow
+FN63PWJ,C,Glasgow
+FN63PWK,C,Glasgow
+FN63PWL,C,Glasgow
+FN63PWO,C,Glasgow
+FSV864,C,Glasgow
+GCS48V,C,Glasgow
+HDZ8349,C,Glasgow
+HEZ9119,C,Glasgow
+HJI565,C,Glasgow
+HSK641,C,Glasgow
+HSK649,C,Glasgow
+HSK650,C,Glasgow
+J60BBC,B,Glasgow
+K800SBL,C,Glasgow
+K88SBL,C,Glasgow
+L17GTG,B,Glasgow
+LAZ7403,C,Glasgow
+LK03NGZ,B,Glasgow
+LK03NHA,B,Glasgow
+LK03NHB,B,Glasgow
+LK03NHC,B,Glasgow
+LK03NHD,B,Glasgow
+LK03NHE,B,Glasgow
+LK51UYF,B,Glasgow
+LK51UYH,B,Glasgow
+LK51UYR,B,Glasgow
+LK51UYU,B,Glasgow
+LK51UYV,B,Glasgow
+LK51UYW,B,Glasgow
+LK51UYX,B,Glasgow
+LK51UZF,B,Glasgow
+LK51UZG,B,Glasgow
+LK51UZL,B,Glasgow
+LK51UZM,B,Glasgow
+LK53EXT,B,Glasgow
+LK53EXU,B,Glasgow
+LK53EXV,B,Glasgow
+LK53EXW,B,Glasgow
+LK53EXX,B,Glasgow
+LK53EXZ,B,Glasgow
+LK53EYA,B,Glasgow
+LK53EYB,B,Glasgow
+LK53EYH,B,Glasgow
+LK53EYJ,B,Glasgow
+LK53EYM,B,Glasgow
+LK53EYO,B,Glasgow
+LK53EYP,B,Glasgow
+LK53EZW,B,Glasgow
+LK53EZX,B,Glasgow
+LK53EZZ,B,Glasgow
+LK53FCG,B,Glasgow
+LK53FCJ,B,Glasgow
+LK53FCX,B,Glasgow
+LK53FCY,B,Glasgow
+LK53FCZ,B,Glasgow
+LK53FDA,B,Glasgow
+LK55ACO,B,Glasgow
+LN51DVL,B,Glasgow
+LN51GNY,B,Glasgow
+LNZ6355,B,Glasgow
+LSK473,C,Glasgow
+LSK495,C,Glasgow
+LSK496,C,Glasgow
+LSK506,C,Glasgow
+LSK508,C,Glasgow
+LT02NVU,B,Glasgow
+LT02NVV,B,Glasgow
+LT02NWA,B,Glasgow
+LT02NWB,B,Glasgow
+LT02NWC,B,Glasgow
+LT02ZFK,B,Glasgow
+LT02ZFL,B,Glasgow
+LUI3026,C,Glasgow
+MHZ9211,C,Glasgow
+MIW7548,C,Glasgow
+MSU466,C,Glasgow
+MV02VDZ,B,Glasgow
+MX06YXN,B,Glasgow
+MX06YXO,B,Glasgow
+MX06YXP,B,Glasgow
+MX06YXR,B,Glasgow
+MX14FUU,B,Glasgow
+MX56ACZ,B,Glasgow
+MX56ADO,B,Glasgow
+MX56ADU,B,Glasgow
+MX56ADV,B,Glasgow
+MX56ADZ,B,Glasgow
+MX56AEA,B,Glasgow
+MX56AEB,B,Glasgow
+MX56AEC,B,Glasgow
+N176AUX,C,Glasgow
+NFZ9136,C,Glasgow
+NFZ9137,C,Glasgow
+NHZ303,C,Glasgow
+NIL8646,C,Glasgow
+NSV224,C,Glasgow
+OO14SOU,C,Glasgow
