@@ -33,7 +33,7 @@ def getInput(text=None):
     return r
 
 
-def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search/?text=',
+def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search/?text={}&sort=date-posted-desc',
                          data=None, vehRegPlateCol=None, metaCols={}):
   """
   Iterate through a list of registration numbers. For each number open a browser
@@ -61,7 +61,7 @@ def sortBusesFromCoaches(numberPlateList, baseurl='https://www.flickr.com/search
   for rni, (rn, N) in enumerate(numberPlateC.items()):
     if rni%10 == 0:
       print(helpMessage)
-    url = baseurl+rn
+    url = baseurl.format(rn)
     BC = 'qqqq'
     while BC not in opts:
       print('{} of {} - {:>8} ({} occurrences): '.format(rni+1, rnl, rn, N), end='', flush=True)
@@ -133,7 +133,7 @@ def testFromFile(inputfile=None, autoMiniBus=True,
                         'column using the --{} flag. Perhaps one of the '
                         'following is appropriate: "{}".').format(Value, Arg, posNames))
 
-  print('{} records'.format(len(data.index)))
+  print('{} records, {} unique registration plates.'.format(len(data.index), len(data[vehRegPlateCol].unique())))
   data_NB = data.loc[~data[vehBodyCol].isin(busBodyTypes)]
   if len(data_NB.index) > 0:
     print(("{} records removed due to unrecognised body types. Set "
@@ -141,7 +141,7 @@ def testFromFile(inputfile=None, autoMiniBus=True,
     print(data_NB[vehBodyCol].unique())
     print('Removed vehicle body types: {}.'.format(', '.join([str(x) for x in data_NB[vehBodyCol].unique()])))
     data = data.loc[data[vehBodyCol].isin(busBodyTypes)]
-    print('{} records remaining.'.format(len(data.index)))
+    print('{} records remaining, {} unique registration plates.'.format(len(data.index), len(data[vehRegPlateCol].unique())))
 
   data_orig = data.copy()
 
@@ -153,7 +153,7 @@ def testFromFile(inputfile=None, autoMiniBus=True,
     BC_already = {r: BC_already[r] for r in regplates if r in regplatesnew}
     data_already = data.loc[data[vehRegPlateCol].isin(regplates)]
     data = data.loc[~data[vehRegPlateCol].isin(regplates)]
-    print('{} already catagorised.'.format(len(data_already.index)))
+    print('{} already catagorised.'.format(len(data_already[vehRegPlateCol].unique())))
 
   if autoMiniBus:
     if vehGrossWeightOCol not in allColumns:
@@ -204,10 +204,10 @@ def getPreviousDecisions(file, includeCity=False):
   prevData = {}
   if includeCity:
     for ri, row in prevDataDF.iterrows():
-      prevData[row['Plate']] = {'BC': row['BusCoach'], 'City': row['City'].split(', ')}
+      prevData[row['Plate'].replace(' ', '')] = {'BC': row['BusCoach'], 'City': row['City'].split(', ')}
   else:
     for ri, row in prevDataDF.iterrows():
-      prevData[row['Plate']] = row['BusCoach']
+      prevData[row['Plate'].replace(' ', '')] = row['BusCoach']
   return prevData
 
 def updatePreviousDecisions(file, BC_new):
