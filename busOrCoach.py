@@ -10,7 +10,8 @@ import os
 import argparse
 from selenium import webdriver
 import pandas as pd
-from fuzzywuzzy import process
+#from fuzzywuzzy import process
+imported_fuzzy = False # Only import fuzzywuzzy if required.
 
 try:
   import msvcrt # Good because users do not have to press enter
@@ -109,13 +110,15 @@ def testFromFile(inputfile=None, autoMiniBus=True,
     data = pd.read_csv(inputfile)
   else:
     data = pd.read_excel(inputfile)
-
   allColumns = list(data)
   metaCols = {}
   for Arg, Value in LocalArgs.items():
     if Arg[-4:] == 'OCol':
       # Check that the optional column exists.
       if Value not in allColumns:
+        if not imported_fuzzy:
+          from fuzzywuzzy import process
+          imported_process = True
         bestOptions = process.extract(Value, allColumns, limit=5)
         posNames = "', '".join([x[0] for x in bestOptions])
         print(("\nOptional column {} does not exist in file, so will not be "
@@ -127,6 +130,9 @@ def testFromFile(inputfile=None, autoMiniBus=True,
     elif Arg[-3:] == 'Col':
       # Check that the required column exists.
       if Value not in allColumns:
+        if not imported_fuzzy:
+          from fuzzywuzzy import process
+          imported_process = True
         bestOptions = process.extract(Value, allColumns, limit=5)
         posNames = '", "'.join([x[0] for x in bestOptions])
         raise ValueError(('Column {} does not exist in file, specify another '
@@ -284,7 +290,8 @@ if __name__ == '__main__':
                       help=("If True, vehicles with a gross weight of 3500 kg "
                             "or less will be automatically assigned as "
                             "minibuses. If True, then an appropriate column "
-                            "be specified for --vehGrossWeightOCol. Default True."))
+                            "must be specified for --vehGrossWeightOCol. Default "
+                            "True."))
   defaultbusBodyTypes = ['S/D BUS/COACH', 'D/D BUS/COACH', 'H/D BUS/COACH', 'MINIBUS']
   parser.add_argument('--busBodyTypes', metavar='bus or coach body classes',
                       type=str, nargs='*', default=defaultbusBodyTypes,
@@ -299,7 +306,7 @@ if __name__ == '__main__':
   parser.add_argument('--previousDecisionsFile', metavar='previous decisions file',
                       type=str, nargs='?', default='gotAlready.csv',
                       help=("File to use for the previous decisions. Default "
-                            "True."))
+                            "is the 'gotAlready.csv' file included."))
 
   # More parameters to be added as needed.
   pargs = parser.parse_args()
